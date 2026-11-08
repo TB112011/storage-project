@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail boxu — Odlož.to</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="portal.css">
+    <link rel="stylesheet" href="box-detail.css">
+  </head>
+  <body class="dashboard-page box-detail-page">
+    <header class="site-header portal-header">
+      <a class="brand" href="index.html"><span class="brand-mark"><img src="logo-new.svg" alt="Odlož.to"></span><span class="brand-name">odlož.to</span></a>
+      <div class="dashboard-user"><a class="back-link" href="dashboard.html#items">← Zpět na přehled</a><button id="logout" type="button">Odhlásit se</button></div>
+    </header>
+    <main class="box-detail-main">
+      <a class="back-link mobile-back" href="dashboard.html#items">← Všechny boxy</a>
+      <div class="box-detail-heading">
+        <div><p class="eyebrow">Detail skladování</p><h1 id="box-title">Box 01</h1><p id="box-subtitle">Zimní oblečení</p></div>
+        <span class="item-status">Bezpečně uloženo</span>
+      </div>
+      <section class="box-detail-layout">
+        <div class="box-hero-image"><img id="box-image" alt=""></div>
+        <div class="box-items-panel">
+          <div class="panel-heading"><div><p class="eyebrow">Obsah boxu</p><h2>Co chcete přivézt?</h2></div><span id="selected-count">0 vybraných</span></div>
+          <p class="panel-intro">Vyberte jednu nebo více věcí. Přivezeme jen to, co právě potřebujete.</p>
+          <div id="item-list" class="item-list"></div>
+          <div class="request-bar"><span id="request-summary">Zatím není vybraná žádná věc</span><button id="request-items" class="button button-small" type="button" disabled>Požádat o doručení</button></div>
+        </div>
+      </section>
+    </main>
+    <script src="portal.js"></script>
+    <script src="box.js"></script>
+  </body>
+</html>

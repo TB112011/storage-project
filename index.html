@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Místo ve vašem bytě navíc. Vyzvedneme, bezpečně uskladníme a přivezeme zpět." />
+    <title>Odlož.to — Skladování bez starostí</title>
+    <link rel="preload" href="logo-new.svg" as="image" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Odlož.to domů"><span class="brand-mark"><img src="logo-new.svg" alt="Odlož.to"></span><span class="brand-name">odlož.to</span></a>
+      <nav class="main-nav" aria-label="Hlavní navigace">
+        <a href="#how-it-works">Jak to funguje</a>
+        <a href="#pricing">Ceník</a>
+        <a href="#why-odlozto">Proč Odlož.to</a>
+      </nav>
+      <div class="header-actions">
+        <button class="lang-switch" type="button" aria-label="Přepnout jazyk">EN</button>
+        <a class="text-link account-link" href="login.html">Přihlásit se</a>
+        <button class="button button-small js-open-calculator" type="button">Spočítat cenu</button>
+        <button class="menu-toggle" type="button" aria-label="Otevřít menu" aria-expanded="false">☰</button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Městské skladování, konečně jednoduše</p>
+          <h1>Více prostoru.<br /><em>Méně starostí.</em></h1>
+          <p class="hero-lead">Uložíme vaše věci mimo byt. Boxy přivezeme ke dveřím, vy je naplníte a my je vyzvedneme. Bez auta, bez tahání, bez vlhké sklepní kóje.</p>
+          <div class="hero-actions">
+            <button class="button js-open-calculator" type="button">Zjistit cenu <span>→</span></button>
+            <a class="text-link" href="#how-it-works">Jak to funguje <span>↓</span></a>
+          </div>
+          <div class="trust-row">
+            <div class="avatars" aria-hidden="true"><span>J</span><span>M</span><span>K</span></div>
+            <p><strong>4.9/5</strong> od lidí z Prahy</p>
+          </div>
+          <div class="live-stats" aria-label="Aktuální statistiky">
+            <div><strong data-counter="1200">0</strong><span>boxů v bezpečí</span></div>
+            <div><strong data-counter="24">0</strong><span>hodin do vyzvednutí</span></div>
+            <div><strong data-counter="98">0</strong><span>% spokojenost</span></div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="visual-card card-top"><span class="card-icon">↗</span><strong>Uvolněte si byt</strong><small>bez stěhování</small></div>
+          <div class="illustration">
+            <img class="hero-photo" src="assets/hero-home.jpg" alt="Dvojice ukládá krabice doma" />
+            <img class="hero-photo-detail hero-photo-detail-one" src="assets/hero-people.jpg" alt="Lidé plánují stěhování společně" />
+            <img class="hero-photo-detail hero-photo-detail-two" src="assets/hero-travel.jpg" alt="Přátelé se připravují na společnou cestu" />
+            <span class="hero-badge">LIDÉ A PROSTOR<br /><strong>V ROVNOVÁZE</strong></span>
+            <div class="photo-shade"></div>
+          </div>
+          <div class="visual-card card-bottom"><span class="dot"></span><strong>Bezpečně a v suchu</strong><small>Praha a okolí</small></div>
+        </div>
+      </section>
+
+      <section class="interactive-demo" data-reveal>
+        <div class="section-heading">
+          <p class="eyebrow">Vyzkoušejte si to</p>
+          <h2>Váš byt se mění<br /><em>jedním kliknutím.</em></h2>
+        </div>
+        <div class="scene-switcher">
+          <div class="scene-copy">
+            <span class="scene-label">Životní situace</span>
+            <h3 id="scene-title">Jarní úklid</h3>
+            <p id="scene-description">Schovejte zimní vybavení a získejte prostor pro nový začátek.</p>
+            <div class="scene-tabs">
+              <button class="scene-tab is-active" type="button" data-scene="Jarní úklid" data-description="Schovejte zimní vybavení a získejte prostor pro nový začátek." data-color="blue" data-image="assets/scene-cleaning.jpg" data-alt="Žena uklízí domácnost">Jarní úklid</button>
+              <button class="scene-tab" type="button" data-scene="Stěhování" data-description="Uložte věci mezi dvěma byty a stěhujte se bez stresu." data-color="yellow" data-image="assets/scene-moving.jpg" data-alt="Lidé stěhují krabice do nového bytu">Stěhování</button>
+              <button class="scene-tab" type="button" data-scene="Cesta pryč" data-description="Odjeďte na pár měsíců. Vaše věci počkají v suchu a bezpečí." data-color="pink" data-image="assets/scene-travel.jpg" data-alt="Přátelé s kufry před cestou">Cesta pryč</button>
+            </div>
+          </div>
+          <div class="scene-visual scene-blue" id="scene-visual"><img class="scene-photo" src="assets/scene-cleaning.jpg" alt="Žena uklízí domácnost" /><span class="scene-photo-shade"></span></div>
+        </div>
+      </section>
+
+      <section class="logo-strip" aria-label="Důvěřují nám">
+        <span>Vymyšleno pro městský život</span><span class="logo-word">PRAHA</span><span class="logo-word">HOME<span>OFFICE</span></span><span class="logo-word">LIFE / LESS</span><span class="logo-word">MOVE</span>
+      </section>
+
+      <section class="section how-it-works" id="how-it-works" data-reveal>
+        <div class="section-heading">
+          <p class="eyebrow">Tři jednoduché kroky</p>
+          <h2>Váš prostor, <em>vaše pravidla.</em></h2>
+          <p>Vy se rozhodnete, co doma potřebujete. O zbytek se postaráme my.</p>
+        </div>
+        <div class="steps">
+          <article class="step interactive-card" data-reveal data-detail="Objednávka zabere méně než dvě minuty. Vyberete počet boxů, termín doručení a vše potvrdíte online."><button type="button"><img class="step-photo" src="assets/step-order.jpg" alt="Člověk objednává službu online" /><span class="step-number">01</span><h3>Objednáte online</h3><p>Vyberte počet boxů a termín online. Zabere to méně než dvě minuty.</p><span class="card-more">Zjistit více →</span></button></article>
+          <article class="step interactive-card" data-reveal data-detail="Boxy přivezeme až ke dveřím. Nemusíte nic vozit autem ani hledat volný sklep."><button type="button"><img class="step-photo" src="assets/scene-moving.jpg" alt="Dvojice přenáší věci při stěhování" /><span class="step-number">02</span><h3>Připravíte věci</h3><p>Přivezeme čisté, pevné boxy až k vám. V klidu je naplníte o víkendu.</p><span class="card-more">Zjistit více →</span></button></article>
+          <article class="step interactive-card" data-reveal data-detail="Vyzvedneme plné boxy, uložíme je v suchu a bezpečí a na požádání přivezeme zpět."><button type="button"><img class="step-photo" src="assets/step-storage.jpg" alt="Pracovník připravuje bezpečné skladování" /><span class="step-number">03</span><h3>My vše uložíme</h3><p>Vyzvedneme je a uložíme v suchu a bezpečí. Kdykoliv chcete zpět, přivezeme.</p><span class="card-more">Zjistit více →</span></button></article>
+        </div>
+      </section>
+
+      <section class="quote-section" id="pricing" data-reveal>
+        <div id="quote"></div>
+        <div class="quote-intro">
+          <p class="eyebrow">Kolik místa potřebujete?</p>
+          <h2>Začněte s prostorem<br /><em>navíc.</em></h2>
+          <p>Bez dlouhodobých závazků. Platíte jen za to, co skutečně uložíte.</p>
+          <div class="quote-perks"><span>✓ Vyzvednutí od dveří</span><span>✓ Pojištění v ceně</span><span>✓ Přístup kdykoliv</span></div>
+        </div>
+        <form class="quote-card" id="quote-form" action="https://formspree.io/f/mzeewyyl" method="POST">
+          <div class="form-header"><span>Rychlá kalkulace</span></div>
+          <label for="boxes">Kolik boxů chcete uložit?</label>
+          <div class="quantity-control"><button type="button" id="decrease" aria-label="Méně boxů">−</button><output id="box-count" for="boxes">4</output><button type="button" id="increase" aria-label="Více boxů">+</button></div>
+          <div class="estimate"><span>Odhadovaná cena</span><strong id="price">1 196 Kč <small>/ měsíc</small></strong></div>
+          <input id="boxes" name="boxes" type="range" min="1" max="12" value="4" data-fs-field />
+          <div class="range-labels"><span>1 box</span><span>12 boxů</span></div>
+          <div class="quote-fields quote-fields-pair">
+            <label for="quote-name">Jméno<input id="quote-name" name="name" type="text" autocomplete="name" required data-fs-field></label>
+            <label for="quote-email">E-mail<input id="quote-email" name="email" type="email" autocomplete="email" required data-fs-field></label>
+          </div>
+          <div class="quote-fields quote-fields-pair">
+            <label for="quote-phone">Telefon <span>(nepovinné)</span><input id="quote-phone" name="phone" type="tel" autocomplete="tel" data-fs-field></label>
+            <label for="quote-service">O jakou službu máte zájem?
+              <select id="quote-service" name="service" required data-fs-field>
+                <option value="" selected disabled>Vyberte službu</option>
+                <option value="Skladování s dovozem">Skladování s dovozem</option>
+                <option value="Osobní sklad">Osobní sklad</option>
+                <option value="Jiné">Jiné / zatím nevím</option>
+              </select>
+            </label>
+          </div>
+          <label for="quote-message">Zpráva<textarea id="quote-message" name="message" rows="3" placeholder="Napište nám, co potřebujete uskladnit…" required data-fs-field></textarea></label>
+          <div data-fs-success role="status" aria-live="polite"></div>
+          <div data-fs-error role="alert" aria-live="assertive"></div>
+          <button class="button button-full" type="submit" data-fs-submit-btn>Odeslat poptávku</button>
+          <p class="fine-print">Vyzvednutí i přivezení zpět od 299 Kč. Bez skrytých poplatků.</p>
+        </form>
+      </section>
+
+      <section class="section audiences" id="why-odlozto" data-reveal>
+        <div class="section-heading split-heading"><div><p class="eyebrow">Pro koho je Odlož.to</p><h2>Prostor pro to,<br /><em>co je důležité.</em></h2></div><p>Od letního vybavení po věci po dětech. Odlož.to se přizpůsobí vašemu životu, ne naopak.</p></div>
+        <div class="audience-grid">
+          <article class="audience-card audience-blue"><span class="audience-number">01</span><div class="audience-art"><img class="audience-photo" src="assets/audience-professionals.jpg" alt="Mladí lidé společně pracují v bytě" /></div><h3>Mladí profesionálové</h3><p>Sportovní vybavení, kufry nebo sezónní šatník. Víc místa pro život i home office.</p><button class="card-more js-open-calculator" type="button">Zjistit cenu →</button></article>
+          <article class="audience-card audience-yellow"><span class="audience-number">02</span><div class="audience-art"><img class="audience-photo" src="assets/audience-families.jpg" alt="Rodina doma společně tráví čas" /></div><h3>Rodiny v bytě</h3><p>Kočárky, hračky a oblečení po dětech bezpečně mimo byt, dokud znovu nepřijdou na řadu.</p><button class="card-more js-open-calculator" type="button">Zjistit cenu →</button></article>
+          <article class="audience-card audience-pink"><span class="audience-number">03</span><div class="audience-art"><img class="audience-photo" src="assets/scene-travel.jpg" alt="Cestovatelé s kufry před odjezdem" /></div><h3>Expati a nomádi</h3><p>Odjíždíte na pár měsíců? Uložíme vaše věci a přivezeme je, až se vrátíte.</p><button class="card-more js-open-calculator" type="button">Zjistit cenu →</button></article>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <p class="eyebrow">Méně věcí kolem. Více života uvnitř.</p>
+        <h2>Vytvořte si doma<br /><em>místo pro více.</em></h2>
+        <button class="button button-light js-open-calculator" type="button">Spočítat cenu <span>→</span></button>
+      </section>
+    </main>
+    <button class="floating-cta js-open-calculator" type="button" aria-label="Otevřít kalkulačku">⌘ <span>Kalkulačka</span></button>
+    <div class="modal" id="calculator-modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal></div>
+      <section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" data-close-modal aria-label="Zavřít okno">×</button>
+        <p class="eyebrow">Rychlá kalkulace</p>
+        <h2 id="modal-title">Kolik prostoru potřebujete?</h2>
+        <p class="modal-lead">Nastavte počet boxů a hned uvidíte orientační cenu.</p>
+        <div class="modal-range"><output id="modal-box-count">4 boxy</output><input id="modal-boxes" type="range" min="1" max="12" value="4"><strong id="modal-price">1 195 Kč <small>/ měsíc</small></strong></div>
+        <button class="button button-full js-modal-submit" type="button">Chci tuto nabídku →</button>
+        <p class="modal-note">Vyzvednutí od dveří od 299 Kč. Bez závazků.</p>
+      </section>
+    </div>
+    <div class="detail-modal" id="detail-modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-detail></div>
+      <section class="modal-card detail-card" role="dialog" aria-modal="true"><button class="modal-close" type="button" data-close-detail aria-label="Zavřít okno">×</button><p class="eyebrow">Odlož.to jednoduše</p><h2>Jak to funguje?</h2><p id="detail-text"></p><button class="button js-open-calculator" type="button">Spočítat cenu →</button></section>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <footer><a class="brand" href="#top"><span class="brand-mark"><img src="logo-new.svg" alt="Odlož.to"></span><span class="brand-name">odlož.to</span></a><p>Lokální skladování pro moderní Prahu.</p><span>© 2024 Odlož.to</span></footer>
+    <script>
+      window.formspree = window.formspree || function () {
+        (formspree.q = formspree.q || []).push(arguments);
+      };
+      formspree("initForm", { formElement: "#quote-form", formId: "mzeewyyl" });
+    </script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Přehled účtu — Odlož.to</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="portal.css">
+  </head>
+  <body class="dashboard-page">
+    <header class="site-header portal-header">
+      <a class="brand" href="index.html"><span class="brand-mark"><img src="logo-new.svg" alt="Odlož.to"></span><span class="brand-name">odlož.to</span></a>
+      <nav class="dashboard-nav"><a class="active" href="#overview">Přehled</a><a href="#items">Uložené věci</a><a href="#invoices">Fakturace</a></nav>
+      <div class="dashboard-user"><span id="user-name">Demo uživatel</span><button id="logout" type="button">Odhlásit se</button></div>
+    </header>
+    <main class="dashboard-main" id="overview">
+      <div class="dashboard-heading"><div><p class="eyebrow">Vaše skladování</p><h1>Dobré ráno, <em id="greeting-name">Petře.</em></h1><p>Váš přehled boxů, plateb a dalších kroků na jednom místě.</p></div><a class="button" href="index.html#quote">+ Objednat další box</a></div>
+      <section class="dashboard-stats"><article><span>Aktivní boxy</span><strong>4</strong><small>z 4 objednaných</small></article><article><span>Uloženo od</span><strong>12. 4.</strong><small>2024</small></article><article><span>Měsíční platba</span><strong>1 195 Kč</strong><small>další platba 1. 6.</small></article></section>
+      <section class="dashboard-grid">
+        <article class="dashboard-panel items-panel" id="items">
+          <div class="panel-heading">
+            <div><p class="eyebrow">Vaše skladování</p><h2>Uložené věci</h2></div>
+            <button class="panel-action" id="add-note" type="button">+ Přidat poznámku</button>
+          </div>
+          <p class="panel-intro">Klikněte na box a rychle zjistíte, co je uvnitř.</p>
+          <div class="box-toolbar"><label class="search-box"><span>⌕</span><input id="box-search" type="search" placeholder="Hledat ve věcech" aria-label="Hledat ve věcech"></label><span id="box-count-label">4 boxy</span></div>
+          <div class="box-list" id="box-list">
+            <a class="box-card is-selected" href="box.html?box=01" data-box="01" data-title="Zimní oblečení" data-items="Kabáty, lyžařské boty, zimní deky" data-image="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=300&q=80" data-fill="72">
+              <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=300&q=80" alt="Zimní oblečení a kabáty">
+              <span class="box-card-body"><strong>Box 01 <small>• 72 % plný</small></strong><span>Kabáty, lyžařské boty, deky</span><em>Bezpečně uloženo</em></span><span class="box-arrow">→</span>
+            </a>
+            <a class="box-card" href="box.html?box=02" data-box="02" data-title="Knihy a dekorace" data-items="Knihy, rámečky, vázy a lampička" data-image="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=300&q=80" data-fill="58">
+              <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=300&q=80" alt="Knihy a dekorace">
+              <span class="box-card-body"><strong>Box 02 <small>• 58 % plný</small></strong><span>Knihy, rámečky, vázy</span><em>Bezpečně uloženo</em></span><span class="box-arrow">→</span>
+            </a>
+            <a class="box-card" href="box.html?box=03" data-box="03" data-title="Cestovní věci" data-items="Velký kufr, batohy, cestovní tašky" data-image="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=300&q=80" data-fill="81">
+              <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=300&q=80" alt="Kufr a cestovní věci">
+              <span class="box-card-body"><strong>Box 03 <small>• 81 % plný</small></strong><span>Kufr, batohy, tašky</span><em>Bezpečně uloženo</em></span><span class="box-arrow">→</span>
+            </a>
+            <a class="box-card" href="box.html?box=04" data-box="04" data-title="Sportovní vybavení" data-items="Lyže, helmy, stan a spacáky" data-image="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?auto=format&fit=crop&w=300&q=80" data-fill="63">
+              <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?auto=format&fit=crop&w=300&q=80" alt="Lyže a sportovní vybavení">
+              <span class="box-card-body"><strong>Box 04 <small>• 63 % plný</small></strong><span>Lyže, stan, spacáky</span><em>Bezpečně uloženo</em></span><span class="box-arrow">→</span>
+            </a>
+          </div>
+          <div class="storage-detail" id="storage-detail">
+            <div class="detail-photo"><img id="detail-image" src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=300&q=80" alt=""></div>
+            <div><p class="eyebrow">Obsah boxu <span id="detail-box">01</span></p><h3 id="detail-title">Zimní oblečení</h3><p id="detail-items">Kabáty, lyžařské boty, zimní deky</p><div class="storage-progress"><span id="detail-progress" style="width:72%"></span></div><small><span id="detail-fill">72</span> % kapacity využito</small></div>
+            <button class="button button-small return-box" id="return-box" type="button">Přivézt box</button>
+          </div>
+        </article>
+        <article class="dashboard-panel timeline-panel"><div class="panel-heading"><div><p class="eyebrow">Další kroky</p><h2>Co se bude dít</h2></div></div><div class="timeline"><div class="timeline-step done"><b>✓</b><div><strong>Boxy vyzvednuty</strong><small>12. 4. 2024</small></div></div><div class="timeline-step active"><b>2</b><div><strong>Uskladnění</strong><small>Probíhá právě teď</small></div></div><div class="timeline-step"><b>3</b><div><strong>Doručení zpět</strong><small>Až budete potřebovat</small></div></div></div></article>
+        <article class="dashboard-panel invoices-panel" id="invoices"><div class="panel-heading"><div><p class="eyebrow">Doklady</p><h2>Fakturace</h2></div><a class="panel-action" href="#invoices">Zobrazit vše</a></div><div class="invoice-row"><div><strong>Faktura #2024-004</strong><small>1. 5. 2024</small></div><strong>1 195 Kč</strong><button type="button" class="download-invoice">Stáhnout PDF</button></div><div class="invoice-row"><div><strong>Faktura #2024-003</strong><small>1. 4. 2024</small></div><strong>1 195 Kč</strong><button type="button" class="download-invoice">Stáhnout PDF</button></div></article>
+      </section>
+      <section class="dashboard-contact" id="contact">
+        <div class="dashboard-contact-heading">
+          <p class="eyebrow">Kontaktujte nás</p>
+          <h2>Potřebujete více prostoru?</h2>
+          <p>Napište nám, s čím vám můžeme pomoci.</p>
+        </div>
+        <form class="dashboard-contact-form compact-contact-form" id="dashboard-contact-form" action="https://formspree.io/f/mzeewyyl" method="POST">
+          <input type="hidden" name="_subject" value="Nová zpráva z dashboardu Odlož.to">
+          <div class="dashboard-contact-fields">
+            <label>Jméno<input name="name" type="text" autocomplete="name" required data-fs-field></label>
+            <label>E-mail<input name="email" type="email" autocomplete="email" required data-fs-field></label>
+          </div>
+          <label>Telefon <span>(nepovinné)</span><input name="phone" type="tel" autocomplete="tel" data-fs-field></label>
+          <label>O jakou službu máte zájem?
+            <select name="service" required data-fs-field>
+              <option value="" selected disabled>Vyberte službu</option>
+              <option value="Skladování s dovozem">Skladování s dovozem</option>
+              <option value="Osobní sklad">Osobní sklad</option>
+              <option value="Jiné">Jiné / zatím nevím</option>
+            </select>
+          </label>
+          <label>Zpráva<textarea name="message" rows="4" placeholder="Napište nám, co potřebujete uskladnit…" required data-fs-field></textarea></label>
+          <div data-fs-success role="status" aria-live="polite"></div>
+          <div data-fs-error role="alert" aria-live="assertive"></div>
+          <button class="button button-full" type="submit" data-fs-submit-btn>Odeslat poptávku</button>
+        </form>
+      </section>
+    </main>
+    <script>
+      window.formspree = window.formspree || function () {
+        (formspree.q = formspree.q || []).push(arguments);
+      };
+      formspree("initForm", { formElement: "#dashboard-contact-form", formId: "mzeewyyl" });
+    </script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+    <script src="portal.js"></script>
+  </body>
+</html>
